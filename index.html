@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <title>Technology</title>
+</head>
+<body>
+    <!-- navbara modallar eklendi. search ortaya alındı. brand değiştirildi. navbar renk değiştirildi -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container navbarContainer">
+            <a class="navbar-brand" href="#"><img width="100" src="img/logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Markalar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ürünler
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Telefon</a></li>
+                        <li><a class="dropdown-item" href="#">Bilgisayar</a></li>
+                        <li><a class="dropdown-item" href="#">Oyun Konsolu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-5 mb-2 aramaKutusu">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="ms-auto">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Kayıt
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            Giriş
+                        </button>
+                    </div>
+                  
+                    <!-- Modallara backdrop eklendi. kayıt modala style den scroll eklendi. 2 modala center eklendi -->
+  
+                    <!-- Modal Kayıt -->
+                    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Üyelik Sayfası</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div> 
+                                <form class="needs-validation" novalidate style="
+                                max-height: calc(100vh - 210px);
+                                overflow-y: auto;
+                                overflow-x:hidden;
+                            ">
+                                    <div class="modal-body row g-3">
+                                        <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Ad</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                        <div class="invalid-feedback">
+                                            Looks good!
+                                        </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                        <label for="validationCustom02" class="form-label">Soyad</label>
+                                        <input type="text" class="form-control" id="validationCustom02" required>
+                                        <div class="invalid-feedback">
+                                            Looks good!
+                                        </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                        <label for="validationCustomUsername" class="form-label">Kullanıcı Adı
+                                        </label>
+                                        <div class="input-group has-validation">
+                                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                            Please choose a username.
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                        <label for="validationCustom03" class="form-label">Parola</label>
+                                        <input type="password" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom03" class="form-label">Parola Tekrar</label>
+                                            <input type="password" class="form-control" id="validationCustom03" required>
+                                            <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Geri</button>
+                                    <button type="submit" class="btn btn-success">Kaydet</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Giriş -->
+                    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Giriş Yap</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div> 
+                                <form class="needs-validation" novalidate>
+                                    <div class="modal-body row g-3">
+                                        <div class="col-md-12">
+                                            <label for="validationCustom01" class="form-label">Kullanıcı Adı</label>
+                                            <input type="text" class="form-control" id="validationCustom01" required>
+                                            <div class="invalid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="validationCustom02" class="form-label">Parola</label>
+                                            <input type="password" class="form-control" id="validationCustom02" required>
+                                            <div class="invalid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Geri</button>
+                                    <button type="submit" class="btn btn-success">Giriş</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="tamcerceve">
+
+        <!-- Body -->
+        <div class="container icerikler">
+
+            <!-- yandan tuşlu başlıklı slider eklendi ama butonlarla oynandı. resimlerin w-100 ü ile oynandı. başlık divinin d-md-blocku sm yapıldı -->
+
+            <!-- Slider -->
+            <div class="row">
+                <div class="col-md-12 pt-4">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="javascript:void(0)">
+                                    <img src="/img/slider1.webp" class="d-block w-50" alt="slider1">
+                                    <div class="carousel-caption d-none d-sm-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)">
+                                    <img src="/img/slider2.jpg" class="d-block w-50" alt="slider2">
+                                    <div class="carousel-caption d-none d-sm-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)">
+                                    <img src="/img/slider3.jpg" class="d-block w-50" alt="slider3">
+                                    <div class="carousel-caption d-none d-sm-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)">
+                                    <img src="/img/slider4.jpg" class="d-block w-50" alt="slider4">
+                                    <div class="carousel-caption d-none d-sm-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <!-- <span class="carousel-control-prev-icon"  aria-hidden="true"></span> -->
+                            <span><i class="bi bi-caret-left-square-fill sliderIcon"></i></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                            <span><i class="bi bi-caret-right-square-fill sliderIcon"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Slider -->
+
+
+            <!-- card group yb 2. si alındı. içine footerı silindi. fotolar div içine alındı -->
+
+            <!-- Ürün Kartları -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border:1px groove;"></div>
+                </div>
+                <div class="col-md-12 p-4">
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="fotoCard">
+                                <img src="img/card5.webp" class="card-img-top" alt="card5">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="fotoCard">
+                                <img src="img/card6.webp" class="card-img-top" alt="card6">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="fotoCard">
+                                <img src="img/card7.webp" class="card-img-top" alt="card7">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="fotoCard">
+                                <img src="img/card8.webp" class="card-img-top" alt="card8">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Ürün Kartları -->
+
+
+            
+            <!-- Tanıtım -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border:1px groove;"></div>
+                </div>
+                <div class="col-md-12">
+                    <div class="tanitim">
+                        <div class="tanitimFoto">
+                            <img src="img/logo.jpg" alt="tanitim1">
+                        </div>
+                        <div class="tanitimYazi">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas enim quaerat praesentium consequatur officia sed laborum, earum odit quos dolorum reiciendis suscipit quidem aliquid ipsam. Animi quaerat magnam deserunt?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div style="border:1px groove;"></div>
+                </div>
+                <div class="col-md-12">
+                    <div class="tanitim">
+                        <div class="tanitimYazi" id="o">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas enim quaerat praesentium consequatur officia sed laborum, earum odit quos dolorum reiciendis suscipit quidem aliquid ipsam. Animi quaerat magnam deserunt?</p>
+                        </div>
+                        <div class="tanitimFoto" id="o1">
+                            <img src="img/tanitim.jpg" alt="tanitim2">
+                        </div>
+                        <div class="tanitimFoto" id="o2">
+                            <img src="img/tanitim.jpg" alt="tanitim2">
+                        </div>
+                        <div class="tanitimYazi" id="o3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas enim quaerat praesentium consequatur officia sed laborum, earum odit quos dolorum reiciendis suscipit quidem aliquid ipsam. Animi quaerat magnam deserunt?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Tanıtım -->
+
+        </div>
+        <!-- /Body -->
+
+        <footer class="mt-4 border-top ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center pt-5">
+                        <span class="text-muted">Technology 2010~2021 hakları saklıdır</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
